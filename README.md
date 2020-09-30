@@ -25,4 +25,8 @@ This website is used for hospital management. In this website admin and requeste
 # Browser
 ✔️ Chrome
 
+# Images
+
+
+
 
