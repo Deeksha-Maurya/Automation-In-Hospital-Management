@@ -26,7 +26,16 @@ This website is used for hospital management. In this website admin and requeste
 ✔️ Chrome
 
 # ScreenShots
-
-
-
-
+<img src="AIHM/Photo1.png">
+<img src="AIHM/Photo2.png">
+<img src="AIHM/Photo3.png">
+<img src="AIHM/Photo4.png">
+<img src="AIHM/Photo5.png">
+<img src="AIHM/Photo6.png">
+<img src="AIHM/Photo7.png">
+<img src="AIHM/Photo8.png">
+<img src="AIHM/Photo9.png">
+<img src="AIHM/Photo10.png">
+<img src="AIHM/Photo11.png">
+<img src="AIHM/Photo12.png">
+<img src="AIHM/Photo13.png">
