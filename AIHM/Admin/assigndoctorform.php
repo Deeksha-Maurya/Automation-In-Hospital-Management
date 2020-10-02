@@ -16,9 +16,9 @@ if(isset($_SESSION['is_adminlogin'])){
  //  Assign doctor Order Request Data going to submit and save on db assigndoctor_tb table
  if(isset($_REQUEST['assign'])){
   // Checking for Empty Fields
-  if(($_REQUEST['request_id'] == "") || ($_REQUEST['request_info'] == "") || ($_REQUEST['requestdesc'] == "") || ($_REQUEST['requestername'] == "") || ($_REQUEST['address1'] == "") || ($_REQUEST['address2'] == "") || ($_REQUEST['requestercity'] == "") || ($_REQUEST['requesterstate'] == "") || ($_REQUEST['requesterzip'] == "") || ($_REQUEST['requesteremail'] == "") || ($_REQUEST['requestermobile'] == "") || ($_REQUEST['assigntech'] == "") || ($_REQUEST['inputdate'] == "")){
+  if(($_REQUEST['request_id'] == "") || ($_REQUEST['request_info'] == "") || ($_REQUEST['requestdesc'] == "") || ($_REQUEST['requestername'] == "") || ($_REQUEST['address1'] == "") || ($_REQUEST['address2'] == "") || ($_REQUEST['requestercity'] == "") || ($_REQUEST['requesterstate'] == "") || ($_REQUEST['requesterzip'] == "") || ($_REQUEST['requesteremail'] == "") || ($_REQUEST['requestermobile'] == "") || ($_REQUEST['assigndoctor'] == "") || ($_REQUEST['inputdate'] == "")){
    // msg displayed if required field missing
-   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   } else {
     // Assigning User Values to Variable
     $rid = $_REQUEST['request_id'];
@@ -32,9 +32,9 @@ if(isset($_SESSION['is_adminlogin'])){
     $rzip = $_REQUEST['requesterzip'];
     $remail = $_REQUEST['requesteremail'];
     $rmobile = $_REQUEST['requestermobile'];
-    $rassigntech = $_REQUEST['assigntech'];
+    $rassigndoctor = $_REQUEST['assigndoctor'];
     $rdate = $_REQUEST['inputdate'];
-    $sql = "INSERT INTO assigndoctor_tb (request_id, request_info, request_desc, requester_name, requester_add1, requester_add2, requester_city, requester_state, requester_zip, requester_email, requester_mobile, assign_doctor, assign_date) VALUES ('$rid', '$rinfo','$rdesc', '$rname', '$radd1', '$radd2', '$rcity', '$rstate', '$rzip', '$remail', '$rmobile', '$rassigntech', '$rdate')";
+    $sql = "INSERT INTO assigndoctor_tb (request_id, request_info, request_desc, requester_name, requester_add1, requester_add2, requester_city, requester_state, requester_zip, requester_email, requester_mobile, assign_doctor, assign_date) VALUES ('$rid', '$rinfo','$rdesc', '$rname', '$radd1', '$radd2', '$rcity', '$rstate', '$rzip', '$remail', '$rmobile', '$rassigndoctor', '$rdate')";
     if($conn->query($sql) == TRUE){
      // below msg display on form submit success
      $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Doctor Assigned Successfully </div>';
@@ -105,8 +105,8 @@ if(isset($_SESSION['is_adminlogin'])){
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="assigntech">Assign to Doctor</label>
-        <input type="text" class="form-control" id="assigntech" name="assigntech">
+        <label for="assigndoctor">Assign to Doctor</label>
+        <input type="text" class="form-control" id="assigndoctor" name="assigndoctor">
       </div>
       <div class="form-group col-md-6">
         <label for="inputDate">Date</label>
