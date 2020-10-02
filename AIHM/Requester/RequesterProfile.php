@@ -19,7 +19,7 @@ include('../dbConnection.php');
  if(isset($_REQUEST['nameupdate'])){
   if(($_REQUEST['rName'] == "")){
    // msg displayed if required field missing
-   $passmsg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+   $passmsg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   } else {
    $rName = $_REQUEST["rName"];
    $sql = "UPDATE requesterlogin_tb SET r_name = '$rName' WHERE r_email = '$rEmail'";
