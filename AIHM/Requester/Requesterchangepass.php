@@ -14,7 +14,7 @@ if($_SESSION['is_login']){
  if(isset($_REQUEST['passupdate'])){
   if(($_REQUEST['rPassword'] == "")){
    // msg displayed if required field missing
-   $passmsg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+   $passmsg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   } else {
     $sql = "SELECT * FROM requesterlogin_tb WHERE r_email='$rEmail'";
     $result = $conn->query($sql);
