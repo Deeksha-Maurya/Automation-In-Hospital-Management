@@ -21,7 +21,7 @@ session_start();
 
  $sql = "SELECT * FROM doctor_tb";
  $result = $conn->query($sql);
- $totaltech = $result->num_rows;
+ $totaldoctor = $result->num_rows;
 
 ?>
 <div class="col-sm-9 col-md-10">
@@ -53,7 +53,7 @@ session_start();
         <div class="card-header">No. of Doctors</div>
         <div class="card-body">
           <h4 class="card-title">
-            <?php echo $totaltech; ?>
+            <?php echo $totaldoctor; ?>
           </h4>
           <a class="btn text-white" href="doctor.php">View</a>
         </div>
