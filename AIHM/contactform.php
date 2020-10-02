@@ -5,7 +5,7 @@ if(isset($_REQUEST['submit'])) {
  if(($_REQUEST['name'] == "") || ($_REQUEST['subject'] == "") || ($_REQUEST['email'] == "") || ($_REQUEST['message'] == "")){
   // msg displayed if required field missing
 
-  $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+  $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   
  } else {
  $name = $_REQUEST['name'];
