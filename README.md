@@ -1,5 +1,5 @@
 # Automation-In-Hospital-Management
-This website is used for hospital management. In this website admin and requester both can login through their id and admin can assign the service demanded by requester.
+This website is used for hospital management. In this website admin and requester both can login through their id and admin can assign the service demanded by requester.This website is basically built for online service provided by Hospitals and clinics.
 
 # Key features
 ✔️ Different logins for requesters/admins,
